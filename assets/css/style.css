@@ -1,47 +1,291 @@
-body{
-    margin: 0%;
+body {
+    background: grey;
+    color: black;
+}
+  
+.titre {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 102, 0);
+    font-size: 44px;
 }
 
-h1{
+/* ---------------------- CONTENU GAUCHE --------------------*/
+
+.container_modif{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 1140px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.container_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center; 
+    perspective: 1000px;
+}
+
+.card_inner{
+    width: 50%;
+    background-image: linear-gradient(to bottom right, #38A2D7, #561139);
+    border-radius: 10pt;
+    height: 300px;
+    position:relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card_inner:hover {
+    transform: rotateY(180deg);
+}
+
+#contenu{
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
     text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: white;
+
+}
+
+#contenu2{
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+#contenu3{
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.contenu_back{
+    min-height: 60px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(71, 71, 71);
+    margin-top: 30px;
+}
+
+.contenu_back2{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+.contenu_back3{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.blanc{
+    width: 80%;
+    background-color: white;
+    text-align: end;
+    
+}
+/* ---------------------- CONTENU DROITE --------------------*/
+
+
+#form{
+    margin: 0 40px 0 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center; 
+
+}
+
+.verif{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center; 
+    width: 100%;
+}
+
+.small_input{
+    width: 50%;
+}
+.small_containt{
+    width: 100%;
+    margin: 0px 0px;
+}
+
+#small_containt2{
+    width: 100%;
+    margin: 0px 10px;
+}
+
+.bouton{
+    background-color: rgb(255, 102, 0);
+    border: none;
+    line-height: 56px;
+    border-radius: 7pt;
+    color: white;
     font-weight: bold;
-    color: rgb(246, 118, 71);
+    margin-top: 20px;
+    font-size: 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-.frais{
+.label_center{
     text-align: center;
 }
 
-.euro {
+label{
+    font-weight: bold;
+    color: #616161;
+    margin-bottom: 6px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+#contenu{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-weight: 500;
+    color: white;
+    font-size: 32px;
+}
+
+#contenu2{
+
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    width: 75%;
+    padding-left: 50px;
+}
+
+#contenu3{
+
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    width: 25%;
+}
+
+#contenu4{
+
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    width: 20%;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+.inter_containt{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.grey {
+    color: darkgrey;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 32px 0;
+}
+
+.green {
     color: green;
 }
 
-.container{
-    display: flex;
+#puce{
+    height: 60px;
+    width: 90px;
+    background-color: #adadad;
+    border-radius: 8pt;
+    padding: 10px 0px;
+    margin-top: 70px;
+    margin-left: 60px;
 }
 
-.carte{
-    width: 700px;
-    height: 400px;
-    background-color: rgb(201, 204, 207);
-    border-radius: 5%;
+#puce_2{
+    height: 40px;
+    width: 65px;
+    background-color: lightgrey;
+    border-radius: 0 8pt 8pt 0;
 }
 
-.donnee{
-    margin: 2%;
-    width: 700px;
-    height: 400px;
+#puce_back{
+    height: 60px;
+    width: 90px;
+    background-color: #adadad;
+    border-radius: 8pt;
+    padding: 10px 0px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
-.donnee label{
+#puce_2_back{
+    height: 40px;
+    width: 65px;
+    background-color: lightgrey;
+    border-radius: 0 8pt 8pt 0;
+}
+
+.credits{
+    height: 55px;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
     text-align: center;
+    margin-top: 12px;
+
 }
 
+.payment{
+    margin-left: 3%;
+    margin-top: -30px;
+    font-weight: 500;
+    color: #979797;
+    font-size: 20px;
+  }
 
+/* ----------- CARD FRONT / BACK ----------- */
 
+.card-front, .card-back {
+    position:absolute;
+    height:100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
+    border-radius: 10pt;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 
-
-{
+  .card-back {
+    transform: rotateY(180deg);
 
 }
