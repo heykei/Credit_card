@@ -97,8 +97,11 @@ body {
     width: 80%;
     background-color: white;
     text-align: end;
-    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
 /* ---------------------- CONTENU DROITE --------------------*/
 
 
