@@ -58,7 +58,7 @@
 
             <form action="#" classe="" id="form">
                 <label for="" class="label_center">Numéro de la carte</label>
-                <input class="form-control" id="num_card" type="text" onkeypress="verifierCaracteres(event); return false" required>
+                <input class="form-control" id="num_card" type="text" onkeypress="isInputNumber(event)" maxlength="19" required>
 
                 <label for="" class="label_center">Titulaire de la carte</label>
                 <input class="form-control" type="text" id="name_card" maxlength="25" required>
@@ -66,11 +66,11 @@
                 <div class="verif">
                     <div class="small_containt">
                         <label for="" class="label_center">Date d'expiration</label>
-                        <input class="form-control small_input" type="text" id="expi_date" maxlength="5" pattern="[0-9]{2}[/][0-9]{2}">
+                        <input class="form-control small_input" type="text" id="expi_date" maxlength="5" onkeypress="isInputNumber(event)" placeholder="MM/YY">
                     </div>
                     <div id="small_containt2">
                         <label for="" class="label_center">Cryptogramme</label>
-                        <input class="form-control small_input" id="crypto" pattern="[0-9]{3}" size="3" type='number_format' maxlength="3" required>
+                        <input class="form-control small_input" id="crypto" type="text" onkeypress="isInputNumber(event)" maxlength="3" placeholder="CVC" required>
                     </div>
                 </div>   
                 <button class="bouton" type="submit" id="button">Payer 35,49€</button>

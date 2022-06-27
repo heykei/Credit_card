@@ -17,25 +17,64 @@ crypto.onblur = function(){
     flip.style.transform = "rotateY(0deg)";
 }
 
-function verifierCaracteres(event) {
-             
-    var keyCode = event.which ? event.which : event.keyCode;
-    var touche = String.fromCharCode(keyCode);
-            
-    var champ = document.getElementById('num_card'); 
-    var caracteres = '0123456789';
-            
-    if(caracteres.indexOf(touche) >= 0) {
-        champ.value += touche;
+function isInputNumber(evt){
+    var ch = String.fromCharCode(evt.which);
+    var num_card = document.getElementById('num_card');
+    
+    if(!(/[0-9]/.test(ch))){
+        evt.preventDefault();
     }
-
     if (num_card.value.length === 4 || num_card.value.length === 9 || num_card.value.length === 14) {
         num_card.value +=" ";
     }
-    else {
-        return num_card;
-    }      
+
+    var ch = String.fromCharCode(evt.which);
+    var expiration = document.getElementById('expi_date');
+
+    if(!(/[0-9]/.test(ch))){
+        evt.preventDefault();
+    }
+    if (expiration.value.length === 2 ) {
+        expiration.value +="/";
+    }
+
+    var ch = String.fromCharCode(evt.which);
+    var crypto = document.getElementById('crypto');
+    if(!(/[0-9]/.test(ch))){
+        evt.preventDefault();
+    }
 }
+// function lettersOnly(evt){         
+//     var ch = String.fromCharCode(evt.which);
+        
+//     if(!(/[a-z]/.test(ch))){
+//         evt.preventDefault();
+//     }
+
+// }
+
+
+
+
+// function verifierCaracteres(event) {
+             
+//     var keyCode = event.which ? event.which : event.keyCode;
+//     var touche = String.fromCharCode(keyCode);
+            
+//     var champ = document.getElementById('num_card'); 
+//     var caracteres = '0123456789';
+            
+//     if(caracteres.indexOf(touche) >= 0) {
+//         champ.value += touche;
+//     }
+
+//     if (num_card.value.length === 4 || num_card.value.length === 9 || num_card.value.length === 14) {
+//         num_card.value +=" ";
+//     }
+//     else {
+//         return num_card;
+//     }      
+// }
 
 // function onlyNumber()
 // {
