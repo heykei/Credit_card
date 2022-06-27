@@ -116,7 +116,7 @@ name_card.addEventListener('input', (e) => {
         name_card.value.length === 9 || name_card.value.length === 10 || name_card.value.length === 11 || name_card.value.length === 12 ||
         name_card.value.length === 13 || name_card.value.length === 14 || name_card.value.length === 15 || name_card.value.length === 16 ||
         name_card.value.length === 17 || name_card.value.length === 18 || name_card.value.length === 19 || name_card.value.length === 20 ||
-        name_card.value.length === 21 || name_card.value.length === 22 || name_card.value.length === 23 || name_card.value.length === 24
+        name_card.value.length === 21
         ){
         contenu2.innerHTML =`${value}`;
         }
